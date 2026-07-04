@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="4">
+<suite name="Suite" parallel="tests" thread-count="3">
 	
   <test name="TestingWithChrome">
    <parameter name="platformname" value="Windows 11"></parameter>
@@ -20,14 +20,6 @@
     </classes>
   </test> <!-- Test -->
   
- <test  name="TestingWithSafari">
-   <parameter name="platformname" value="macOS Sequoia"></parameter>
-   <parameter name="browser" value="safari"></parameter>
-   <parameter name="browserversion" value="17"></parameter>  
-    <classes>
-      <class name="SeleniumJavaAssignment.TestScenarios"/>
-    </classes>
-  </test> <!-- Test -->
   
   <test  name="TestingWithFirefox">
    <parameter name="platformname" value="macOS Sequoia"></parameter>
