@@ -3,6 +3,7 @@ package SeleniumJavaAssignment;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,27 +46,27 @@ public class TestScenarios extends BaseClass{
 	}
 
 	@Test (priority=2)
-	public void sliderDemo() {
+	@Parameters("browser")
+	public void sliderDemo(String browser) {
 
 		//1. Open the https://www.lambdatest.com/selenium-playground page and click “Drag & Drop Sliders” under “Progress Bars & Sliders”.
 		getDriver().findElement(By.linkText("Drag & Drop Sliders")).isDisplayed();
 		getDriver().findElement(By.linkText("Drag & Drop Sliders")).click();
-
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 		//2. Select the slider “Default value 15” and drag the bar to make it 95 by validating whether the range value shows 95.
 		WebElement slider = getDriver().findElement(By.xpath("//div[@id='slider3']//input[@type='range']"));
-		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(slider));
-		WebElement output = getDriver().findElement(By.id("rangeSuccess"));
 		Actions actions = new Actions(getDriver());
-		actions.moveToElement(slider).clickAndHold().moveByOffset(215, 0).release().perform();
+		actions.moveToElement(slider).clickAndHold().moveByOffset(240, 0).release().perform();
+		WebElement output = getDriver().findElement(By.id("rangeSuccess"));
+		System.out.println(browser+" "+"Displayed Value : " + output.getText());
 		Assert.assertEquals(output.getText(), "95", "Slider value did not update correctly.");
-
 	}
 	@Test(priority=3)
 	public void fromDemo() {
 
 		//1. Open the https://www.lambdatest.com/selenium-playground page and click “Input Form Submit”.
-		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(7));
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(13));
 		getDriver().findElement(By.linkText("Input Form Submit")).click();
 
 		//2. Click “Submit” without filling in any information in the form.	

@@ -16,8 +16,8 @@ import org.testng.annotations.*;
 
 public class BaseClass {
 
-    private String username = "";
-    private String accesskey = "";
+    private String username = "kavyanayak0000";
+    private String accesskey = "LT_G37n5mJsTpmbYE70JY4jdLKds4pENYdWH86XnGWHSrxy4nL";
     private String hubURL = "hub.lambdatest.com/wd/hub";
 
     // Thread-safe WebDriver
@@ -62,6 +62,7 @@ public class BaseClass {
             driver.set(new RemoteWebDriver(
                     new URL("https://" + username + ":" + accesskey + "@" + hubURL),
                     capabilities));
+            System.out.println("Session ID: " + getDriver().getSessionId());
 
         } catch (MalformedURLException e) {
 

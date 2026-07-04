@@ -9,45 +9,30 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TestingWithChrome</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,351</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestingWithEdge</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,897</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestingWithChrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,924</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestingWithFirefox</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,993</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">89,814</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestingWithChrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m0">onFailureTakeSS</a></td><td rowspan="1">1783143156714</td><td rowspan="1">4</td></tr><tr><th colspan="4">TestingWithChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m1">simpleFormDemo</a></td><td rowspan="1">1783143156701</td><td rowspan="1">9</td></tr><tr><th colspan="4">TestingWithChrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m2">onFailureTakeSS</a></td><td rowspan="2">1783143156728</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">onFailureTakeSS</a></td></tr><tr class="skippedeven"><td><a href="#m4">setURI</a></td><td rowspan="2">1783143156723</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m5">setURI</a></td></tr><tr><th colspan="4">TestingWithChrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m6">fromDemo</a></td><td rowspan="1">1783143156733</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">sliderDemo</a></td><td rowspan="1">1783143156726</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestingWithEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m0">fromDemo</a></td><td rowspan="1">1783176983030</td><td rowspan="1">5709</td></tr><tr class="passedeven"><td><a href="#m1">simpleFormDemo</a></td><td rowspan="1">1783176977002</td><td rowspan="1">3712</td></tr><tr class="passedeven"><td><a href="#m2">sliderDemo</a></td><td rowspan="1">1783176980864</td><td rowspan="1">2031</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestingWithChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m3">fromDemo</a></td><td rowspan="1">1783176985032</td><td rowspan="1">5825</td></tr><tr class="passedeven"><td><a href="#m4">simpleFormDemo</a></td><td rowspan="1">1783176977497</td><td rowspan="1">3886</td></tr><tr class="passedeven"><td><a href="#m5">sliderDemo</a></td><td rowspan="1">1783176981565</td><td rowspan="1">3162</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestingWithFirefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m6">sliderDemo</a></td><td rowspan="1">1783177003729</td><td rowspan="1">2513</td></tr><tr><th colspan="4">TestingWithFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m7">fromDemo</a></td><td rowspan="1">1783177006608</td><td rowspan="1">4115</td></tr><tr class="passedeven"><td><a href="#m8">simpleFormDemo</a></td><td rowspan="1">1783177000931</td><td rowspan="1">2662</td></tr></tbody>
 </table>
-<h2>TestingWithChrome</h2><h3 id="m0">SeleniumJavaAssignment.TestScenarios#onFailureTakeSS</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=simpleFormDemo status=FAILURE method=TestScenarios.simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@344344fa] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;snap&quot; is null
-	at SeleniumJavaAssignment.BaseClass.onFailureTakeSS(BaseClass.java:88)
+<h2>TestingWithEdge</h2><h3 id="m0">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestingWithChrome</h2><h3 id="m3">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestingWithFirefox</h2><h3 id="m6">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Slider value did not update correctly. expected [95] but found [94]
+	at SeleniumJavaAssignment.TestScenarios.sliderDemo(TestScenarios.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 ... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
-	at SeleniumJavaAssignment.TestScenarios.simpleFormDemo(TestScenarios.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SeleniumJavaAssignment.TestScenarios#onFailureTakeSS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">SeleniumJavaAssignment.TestScenarios#onFailureTakeSS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">SeleniumJavaAssignment.TestScenarios#setURI</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">SeleniumJavaAssignment.TestScenarios#setURI</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;snap&quot; is null
-	at SeleniumJavaAssignment.BaseClass.onFailureTakeSS(BaseClass.java:88)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;snap&quot; is null
-	at SeleniumJavaAssignment.BaseClass.onFailureTakeSS(BaseClass.java:88)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

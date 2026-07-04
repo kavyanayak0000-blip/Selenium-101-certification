@@ -8,8 +8,8 @@
           <include name="tearDown"/>
           <include name="setURI"/>
           <include name="sliderDemo"/>
-          <include name="onFailureTakeSS"/>
-          <include name="startUp"/>
+          <include name="setUp"/>
+          <include name="takeScreenshot"/>
         </methods>
       </class> <!-- SeleniumJavaAssignment.TestScenarios -->
     </classes>
